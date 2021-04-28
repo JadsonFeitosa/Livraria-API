@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
 @DataJpaTest
-public class BookRepositoryTest {
+public class IntegracaoBookRepositoryTest {
 
     @Autowired
     TestEntityManager entityManager;
@@ -26,17 +26,15 @@ public class BookRepositoryTest {
     BookRepository repository;
 
     @Test
-    @DisplayName("Deve retornar verdadeiro quando existir um livro na base com o isbn informado")
+    @DisplayName("retornar verdadeiro quando existir um livro na base com o isbn informado")
     public void returnTrueWhenIsbnExists(){
-        //cenario
-        String isbn = "123";
+
+    	String isbn = "123";
         Book book = createNewBook(isbn);
         entityManager.persist(book);
 
-        //execucao
         boolean exists = repository.existsByIsbn(isbn);
 
-        //verificacao
         assertThat(exists).isTrue();
     }
 
@@ -45,33 +43,29 @@ public class BookRepositoryTest {
     }
 
     @Test
-    @DisplayName("Deve retornar false quando não existir um livro na base com o isbn informado")
+    @DisplayName("retornar false quando não existir um livro na base com o isbn informado")
     public void returnFalseWhenIsbnDoesntExist(){
-        //cenario
         String isbn = "123";
-           //execucao
+
         boolean exists = repository.existsByIsbn(isbn);
 
-        //verificacao
         assertThat(exists).isFalse();
     }
 
     @Test
-    @DisplayName("Deve obter um livro por id.")
+    @DisplayName("obter um livro por id.")
     public void findByIdTest(){
-        //cenário
-        Book book = createNewBook("123");
+
+    	Book book = createNewBook("123");
         entityManager.persist(book);
 
-        //execucao
         Optional<Book> foundBook = repository.findById(book.getId());
 
-        //verificacoes
         assertThat(foundBook.isPresent()).isTrue();
     }
 
     @Test
-    @DisplayName("Deve salvar um livro.")
+    @DisplayName("salvar um livro.")
     public void saveBookTest(){
 
         Book book = createNewBook("123");
@@ -83,7 +77,7 @@ public class BookRepositoryTest {
     }
 
     @Test
-    @DisplayName("Deve deletar um livro")
+    @DisplayName("deletar um livro")
     public void deleteBookTest(){
 
         Book book = createNewBook("123");

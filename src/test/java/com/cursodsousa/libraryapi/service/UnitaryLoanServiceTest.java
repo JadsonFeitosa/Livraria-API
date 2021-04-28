@@ -30,7 +30,7 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
-public class LoanServiceTest {
+public class UnitaryLoanServiceTest {
 
     LoanService service;
 

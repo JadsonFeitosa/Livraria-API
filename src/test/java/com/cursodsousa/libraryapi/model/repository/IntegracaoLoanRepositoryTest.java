@@ -18,13 +18,13 @@ import javax.persistence.EntityManager;
 import java.time.LocalDate;
 import java.util.List;
 
-import static com.cursodsousa.libraryapi.model.repository.BookRepositoryTest.createNewBook;
+import static com.cursodsousa.libraryapi.model.repository.IntegracaoBookRepositoryTest.createNewBook;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
 @DataJpaTest
-public class LoanRepositoryTest {
+public class IntegracaoLoanRepositoryTest {
 
     @Autowired
     private LoanRepository repository;

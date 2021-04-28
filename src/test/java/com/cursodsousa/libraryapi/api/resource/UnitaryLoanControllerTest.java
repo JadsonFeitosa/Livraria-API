@@ -8,7 +8,7 @@ import com.cursodsousa.libraryapi.model.entity.Book;
 import com.cursodsousa.libraryapi.model.entity.Loan;
 import com.cursodsousa.libraryapi.service.BookService;
 import com.cursodsousa.libraryapi.service.LoanService;
-import com.cursodsousa.libraryapi.service.LoanServiceTest;
+import com.cursodsousa.libraryapi.service.UnitaryLoanServiceTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
@@ -35,7 +35,7 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Optional;
 
-import static com.cursodsousa.libraryapi.api.resource.UnidadeBookControllerTest.BOOK_API;
+import static com.cursodsousa.libraryapi.api.resource.UnitaryBookControllerTest.BOOK_API;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -43,7 +43,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ActiveProfiles("test")
 @AutoConfigureMockMvc
 @WebMvcTest(controllers = LoanController.class)
-public class LoanControllerTest {
+public class UnitaryLoanControllerTest {
 
     static final String LOAN_API = "/api/loans";
 
@@ -58,7 +58,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve realizar um emprestimo")
-    public void createLoanTest() throws Exception {
+    public void criarEmprestimoTest() throws Exception {
 
         LoanDTO dto = LoanDTO.builder().isbn("123").email("customer@email.com").customer("Fulano").build();
         String json = new ObjectMapper().writeValueAsString(dto);
@@ -83,7 +83,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar erro ao tentar fazer emprestimo de um livro inexistente.")
-    public void invalidIsbnCreateLoanTest() throws  Exception{
+    public void criarEmprestimoInvalidoTest() throws  Exception{
 
         LoanDTO dto = LoanDTO.builder().isbn("123").customer("Fulano").build();
         String json = new ObjectMapper().writeValueAsString(dto);
@@ -104,7 +104,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar erro ao tentar fazer emprestimo de um livro emprestado.")
-    public void loanedBookErrorOnCreateLoanTest() throws  Exception{
+    public void criarEmprestimoExistenteTest() throws  Exception{
 
         LoanDTO dto = LoanDTO.builder().isbn("123").customer("Fulano").build();
         String json = new ObjectMapper().writeValueAsString(dto);
@@ -129,8 +129,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar um livro")
-    public void returnBookTest() throws Exception{
-        //cenário { returned: true }
+    public void retornarLivroTest() throws Exception{
         ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
         Loan loan = Loan.builder().id(1l).build();
         BDDMockito.given(loanService.getById(Mockito.anyLong()))
@@ -151,8 +150,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar 404 quando tentar devolver um livro inexistente.")
-    public void returnInexistentBookTest() throws Exception{
-        //cenário
+    public void retornarLivroInexistenteTest() throws Exception{
         ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
         String json = new ObjectMapper().writeValueAsString(dto);
 
@@ -169,10 +167,9 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve filtrar empréstimos")
-    public void findLoansTest() throws Exception{
-        //cenário
+    public void filtraEmprestimosTest() throws Exception{
         Long id = 1l;
-        Loan loan = LoanServiceTest.createLoan();
+        Loan loan = UnitaryLoanServiceTest.createLoan();
         loan.setId(id);
         Book book = Book.builder().id(1l).isbn("321").build();
         loan.setBook(book);

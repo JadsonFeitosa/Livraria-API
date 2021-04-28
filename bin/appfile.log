@@ -4898,3 +4898,81 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2019-12-15 10:19:00.321  INFO 9196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
 2019-12-15 10:19:43.199  INFO 9196 --- [http-nio-8080-exec-4] c.c.l.api.resource.BookController        :  creating a book for isbn: string 
 2019-12-15 10:20:17.704  INFO 9196 --- [http-nio-8080-exec-1] c.c.l.api.resource.BookController        :  obtaining details for book id: 1 
+2021-04-28 14:01:31.861  INFO 9816 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 9816 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:01:31.863  INFO 9816 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:01:34.737  INFO 9816 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:01:35.348  INFO 9816 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:01:35.349  INFO 9816 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:01:35.385  INFO 9816 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 36 ms
+2021-04-28 14:01:35.459  INFO 9816 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 4.751 seconds (JVM running for 8.122)
+2021-04-28 14:01:35.849  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  deleting book of id: 1 
+2021-04-28 14:01:36.188  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  updating book of id: 1 
+2021-04-28 14:01:36.402  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  updating book of id: 1 
+2021-04-28 14:01:36.446  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:01:36.469  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  deleting book of id: 1 
+2021-04-28 14:01:36.491  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  obtaining details for book id: 1 
+2021-04-28 14:01:36.561  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:01:36.577  INFO 9816 --- [main] c.c.l.api.resource.BookController        :  obtaining details for book id: 1 
+2021-04-28 14:01:36.599  INFO 9816 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:06:05.316  INFO 8808 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 8808 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:06:05.318  INFO 8808 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:06:08.097  INFO 8808 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:06:08.845  INFO 8808 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:06:08.846  INFO 8808 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:06:08.874  INFO 8808 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 27 ms
+2021-04-28 14:06:08.932  INFO 8808 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 4.269 seconds (JVM running for 6.848)
+2021-04-28 14:06:09.493  INFO 8808 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:06:09.720  INFO 8808 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:07:22.033  INFO 4536 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 4536 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:07:22.036  INFO 4536 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:07:24.723  INFO 4536 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:07:25.447  INFO 4536 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:07:25.448  INFO 4536 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:07:25.516  INFO 4536 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 67 ms
+2021-04-28 14:07:25.635  INFO 4536 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 4.335 seconds (JVM running for 6.45)
+2021-04-28 14:07:26.168  INFO 4536 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:07:26.295  INFO 4536 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:07:26.390  INFO 4536 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:10:18.108  INFO 1836 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 1836 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:10:18.111  INFO 1836 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:10:20.782  INFO 1836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:10:21.331  INFO 1836 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:10:21.332  INFO 1836 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:10:21.367  INFO 1836 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 35 ms
+2021-04-28 14:10:21.447  INFO 1836 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 4.04 seconds (JVM running for 6.158)
+2021-04-28 14:10:21.992  INFO 1836 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:10:22.174  INFO 1836 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:11:09.554  INFO 1076 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 1076 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:11:09.556  INFO 1076 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:11:12.293  INFO 1076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:11:12.780  INFO 1076 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:11:12.781  INFO 1076 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:11:12.810  INFO 1076 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 28 ms
+2021-04-28 14:11:12.893  INFO 1076 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 4.212 seconds (JVM running for 6.314)
+2021-04-28 14:11:13.374  INFO 1076 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:11:13.544  INFO 1076 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:12:16.312  INFO 9664 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 9664 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:12:16.315  INFO 9664 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:12:19.026  INFO 9664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:12:19.635  INFO 9664 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:12:19.636  INFO 9664 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:12:19.661  INFO 9664 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 25 ms
+2021-04-28 14:12:19.736  INFO 9664 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 4.163 seconds (JVM running for 6.246)
+2021-04-28 14:12:20.349  INFO 9664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:17:25.209  INFO 4572 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 4572 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:17:25.212  INFO 4572 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:17:27.943  INFO 4572 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:17:28.425  INFO 4572 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:17:28.426  INFO 4572 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:17:28.453  INFO 4572 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2021-04-28 14:17:28.525  INFO 4572 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 4.095 seconds (JVM running for 6.178)
+2021-04-28 14:17:29.186  INFO 4572 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:17:53.455  INFO 920 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Starting UnidadeBookControllerTest on DESKTOP-GQVELDM with PID 920 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\library-api)
+2021-04-28 14:17:53.456  INFO 920 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : The following profiles are active: test
+2021-04-28 14:17:56.117  INFO 920 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 14:17:56.614  INFO 920 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 14:17:56.615  INFO 920 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 14:17:56.641  INFO 920 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 25 ms
+2021-04-28 14:17:56.706  INFO 920 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 3.933 seconds (JVM running for 5.964)
+2021-04-28 14:17:57.252  INFO 920 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
+2021-04-28 14:17:57.396  INFO 920 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

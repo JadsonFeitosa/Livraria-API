@@ -28,7 +28,7 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
-public class BookServiceTest {
+public class UnitaryBookServiceTest {
 
     BookService service;
 

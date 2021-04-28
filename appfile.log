@@ -4976,3 +4976,11 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2021-04-28 14:17:56.706  INFO 920 --- [main] c.c.l.a.r.UnidadeBookControllerTest      : Started UnidadeBookControllerTest in 3.933 seconds (JVM running for 5.964)
 2021-04-28 14:17:57.252  INFO 920 --- [main] c.c.l.api.resource.BookController        :  creating a book for isbn: 001 
 2021-04-28 14:17:57.396  INFO 920 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-28 15:45:55.792  INFO 4944 --- [main] c.c.l.a.r.UnidadeLoanControllerTest      : Starting UnidadeLoanControllerTest on DESKTOP-GQVELDM with PID 4944 (started by Jadson Feitosa in C:\Users\Jadson Feitosa\Git\Livraria-API)
+2021-04-28 15:45:55.794  INFO 4944 --- [main] c.c.l.a.r.UnidadeLoanControllerTest      : The following profiles are active: test
+2021-04-28 15:45:58.658  INFO 4944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-28 15:45:59.167  INFO 4944 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-28 15:45:59.168  INFO 4944 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-28 15:45:59.198  INFO 4944 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 29 ms
+2021-04-28 15:45:59.269  INFO 4944 --- [main] c.c.l.a.r.UnidadeLoanControllerTest      : Started UnidadeLoanControllerTest in 4.087 seconds (JVM running for 7.414)
+2021-04-28 15:45:59.996  INFO 4944 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
